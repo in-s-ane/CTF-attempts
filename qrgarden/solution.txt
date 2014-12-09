@@ -1,0 +1,6 @@
+Using imagemagick:
+$ convert -crop 1%x1% qrgarden.jpg +repage qr%d.png
+
+Using zbar-tools:
+$ zbarimg * | grep ADCTF
+>> QR-Code:ADCTF_re4d1n9_Qrc0de_15_FuN
