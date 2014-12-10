@@ -11,18 +11,19 @@ def problem():
 	past = []
 	from_ = start
 	for to in map(int, sys.argv[1:]):
+		print "past: " + str(past)
+		print "Set E[to]: " + str(E[to])
+		print sum(past)
 		for e in E[from_]:
 			print 'the flag is: ' + ''.join(chr(c) for c in past)
-			print sum(past)
-			print find(to)
 			if e[0] == to:
 				past.append(e[1])
 				break
 			else:
-				print str(to) + " | " + str(e[0]) + ' failed'
+#				print str(to) + " | " + str(e[0]) + ' failed'
 				sys.exit(1)
 		from_ = to
-		print E[from_]
+		print "+===================+"
 		if to == goal:
 			if sum(past) == shortest:
 				print 'the flag is: ' + ''.join(chr(c) for c in past)
@@ -31,16 +32,5 @@ def showE():
 	for thing in E:
 		print thing
 
-def find(x):
-	for index in range(0 , len(E)):
-		try:
-			for n in range(0 , len(E[index])):
-				if x == E[index][n][1]:
-					return x + ": " + str(index) + "\n"
-		except:
-			a = 0
-
-#showE()
-#find()
 problem()
 
