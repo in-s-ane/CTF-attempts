@@ -1,0 +1,41 @@
+First do:
+sudo apt-get install quelcom sox
+
+Next use wget:
+ 
+wget http://adctf2014.katsudon.org/dat/tcaBjvZbWEAKfsGB/listen.wav
+
+Use qwavinfo in package quelcom to find out what is wrong:
+
+qwavinfo listen.wav 
+listen.wav: header value error
+1 file (1 error) => 0:00
+
+We have a header error. Use qwavheaderdump in package quelcom to find out the issue with the header:
+
+$ qwavheaderdump -F listen.wav 
+listen.wav (328310 bytes):
+	riff: 'RIFF'
+	riff length: 328302
+	wave: 'WAVE'
+	fmt: 'fmt '
+	fmt length: 16
+	format: 1
+	channels: 1
+	sample rate: 1
+		sample rate field should be between 8000 and 48000
+		don't know which value must be set...
+
+	bytes/second: 44100
+	bytes/sample: 2
+	bits/sample: 16
+	data: 'data'
+	data length: 328266
+
+Use the sox command to change the sample rate to 32 kHz:
+
+sox -r 32000 listen.wav -r 32000 listen-32.wav 
+
+Open listen-32.wav in a music player and you get the flag:
+
+The flag is in all capital letters: ADCTF_SOUNDS_GOOD
