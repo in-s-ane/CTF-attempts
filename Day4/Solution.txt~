@@ -1,0 +1,9 @@
+Ok, this file is compiled with x64 aseembly, but if we disassemble the main functions, things looks pretty interesting.
+
+First use gdb:
+
+$ gdb ./easyone
+
+Then the thing loads, and then do:
+
+(gdb) disass main
