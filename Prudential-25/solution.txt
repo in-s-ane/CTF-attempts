@@ -1,0 +1,12 @@
+PHP has an array variable exploit when using the $_GET method
+
+Read more about it here: http://stackoverflow.com/questions/1885979/php-get-variable-array-injection
+
+Basically, I can set execute arbitrary code when using arrays. In this case, I'll make name equal to password.
+
+Below is the link:
+http://52.10.107.64:8001/?name[]=1&password[]=$name
+
+name is 1 and password is $name, which aren't equal. When getting the sha1, PHP evaluates the statements and produces the same hash to get by the second check.
+
+Flag: I_think_that_I_just_broke_sha1
