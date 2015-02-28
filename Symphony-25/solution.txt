@@ -1,0 +1,3 @@
+We have to find a number larger that 999 and less than four characters. Easy!
+PHP's is_numeric() function is quite flexible in the represenations of
+numbers it can take. We can even use e notation!
