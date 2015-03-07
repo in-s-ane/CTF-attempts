@@ -1,0 +1,6 @@
+Opcode for a 16/32 bit relative jump:
+
+Mnemonic: rel16/32
+Opcode: E9
+
+Flag: E9
