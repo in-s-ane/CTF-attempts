@@ -1,0 +1,3 @@
+The regexp ensures that the input between the start of line and end of line is
+alphanumeric and the requirement for the password is that it contain "--". We
+can trick the regexp by sending a null (%00) character.

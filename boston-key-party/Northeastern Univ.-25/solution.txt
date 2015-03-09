@@ -1,0 +1,4 @@
+All that is required for a valid password is that the strcmp() returns 0. A
+little bit of research reveals that strcmp() returns 0 on error so all we have
+to do is force an error to occur during the execution of strcmp(). We can do
+so by sending in a value that is not a string, like an array for example.
