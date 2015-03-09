@@ -1,0 +1,28 @@
+Linux OTAMISC 3.2.0-4-amd64 #1 SMP Debian 3.2.65-1+deb7u1 x86_64
+
+The programs included with the Debian GNU/Linux system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+
+Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+permitted by applicable law.
+You have mail.
+Last login: Fri Mar  6 21:34:58 2015 from 165.155.202.254
+hello, welcome to my secret server
+I thought somone may try to break into my server so i setup some extra protection
+i dont want to give you a shell, but here is some ascii art for you:
+[?1049h[?1h=http://cl.ly/image/2c2a3O1T3q3j
+/\
+||_____-----_____-----_____
+||   O                  O  \
+||    O\\    ___    //O    /
+||       \\ /   \//        \
+||         |_O O_|         /
+||          ^ | ^          \
+||        // UUU \\        /
+||    O//            \\O   \
+||   O                  O  /
+||_____-----_____-----_____\
+||
+||.
+[K[?1l>[?1049l

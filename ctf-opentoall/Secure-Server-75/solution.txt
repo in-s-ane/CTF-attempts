@@ -1,0 +1,21 @@
+> Run nmap -v -sT -Pn 104.131.124.226 to find open ports on the server
+
+> Visit 104.131.124.226:8080/robots.txt and 104.131.124.226:8080/humans.txt to
+  find available routes on the server. Here we'll discover the existence of 104.131.124.226:8080/secret
+> Go to the directory listing at 104.131.124.226:8080/secret
+> Download secret.zip
+> Extract secret.zip
+> cd into .ssh to find the private and public keys for ssh authentication and run:
+  (Note that we guessed the username is "secret")
+ssh -v -i key -l secret 104.131.124.226 -p 22 | less
+
+> Since the server instantaneously closes the shell after connection and appears
+  to print out nothing, we have to capture the output, so we'll use less(or
+  strings) to print out the output that we are given. An additional reason we
+  need to do this is because the server prints out control characters to hide
+  the output after the connection closes.
+
+> Sifting through the output, we find the link http://cl.ly/image/2c2a3O1T3q3j/
+  which gives us an image!
+
+> Download and open the .jpg file and you get the flag!
