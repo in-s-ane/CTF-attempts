@@ -1,0 +1,4 @@
+We run `strings` on the binary and look for "lasactf"
+
+$ strings easy.exe | grep "lasactf"
+lasactf{th1s_fl4g_i5_3asy}
