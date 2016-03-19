@@ -1,0 +1,2 @@
+redefine stuff, sql inject
+Your flag is: lasactf{cl1ent_sid3_b3st_s1de}
