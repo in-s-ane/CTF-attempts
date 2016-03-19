@@ -1,0 +1,4 @@
+james9909@shell:/problems/grep-quest_0/grepy-words$ grep "lasactf" *
+potato.txt:lasactf{1_am_a_h1dd3n_p0tat0}
+
+lasactf{1_am_a_h1dd3n_p0tat0}
