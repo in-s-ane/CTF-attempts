@@ -1,2 +1,10 @@
-redefine stuff, sql inject
+If we look at the source of the php page, we find some sql stuff that seems vulnerable.
+However, there is client-side form validation that doesn't allow us to use anything but letters
+in the login query. We can redefine this function to bypass the check using the console.
+
+>> function() checkValid() {return true;}
+
+Now, if we log in with the credentials ' OR 1=1 --
+we get the flag.
+
 Your flag is: lasactf{cl1ent_sid3_b3st_s1de}
