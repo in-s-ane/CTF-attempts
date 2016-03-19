@@ -1,0 +1,5 @@
+The flag is a comment in the source of the page
+
+<!-- Backup flag in case something breaks: lasactf{welc0m3_to_web_dev} -->
+
+lasactf{welc0m3_to_web_dev}
