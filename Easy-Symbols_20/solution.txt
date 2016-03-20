@@ -1,0 +1,7 @@
+What word that is commonly involved with computer security
+rhymes with the given words? Morse.
+
+Converting all the symbols to morse code using morse.py,
+we have morse code, and translating that into text gives us the flag.
+
+MORSEWASCOOL
