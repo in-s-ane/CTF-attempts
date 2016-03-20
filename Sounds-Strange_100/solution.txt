@@ -1,0 +1,5 @@
+$ javac AudioEnc.java
+$ java AudioEnc `python -c "'a' * 2048"`
+$ cmp -bl original.aiff sounds_strange.aiff
+
+lasactf{th3_s0unds_0f_t3xt}
