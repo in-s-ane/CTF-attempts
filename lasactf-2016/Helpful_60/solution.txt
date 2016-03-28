@@ -1,0 +1,12 @@
+The hint says that the problem can be solved on any channel,
+so therefore, it probably has something to do with the freenode commands.
+
+Since the word help is highlighted and it's asking for someone's name,
+it's likely something to do with the help command.
+
+Looking at the possible commands help gives, we see a command called
+credits. Doing '/help credits' display the list of people who helped
+document the IRC commands in help.
+
+One of the people has a username called zartik. His name is
+Daniel Hemmerich, which is the flag.

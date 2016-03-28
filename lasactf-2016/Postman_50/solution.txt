@@ -1,0 +1,4 @@
+$ curl http://web.lasactf.com:2395/ -A "Google Ultron" -H "SpecialAuth: Kyle" --referer "kyleisacoolguy.org"
+<h1>Sucesfully Authenticated! Your flag is:lasactf{h3aders_ar3_c00l}</h1>%
+
+lasactf{h3aders_ar3_c00l}

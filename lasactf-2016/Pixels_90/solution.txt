@@ -1,0 +1,9 @@
+From the problem description, it's obvious that we need to compare the two images and compose an image
+from the difference.
+
+$ compare QR1.png QR2.png -compose src diff.png
+$ zbarimg diff.png
+QR-Code:Two isn\'t always better than one. lasactf{QR_c0d35_ar3_n3at}
+scanned 1 barcode symbols from 1 images in 0.03 seconds
+
+lasactf{QR_c0d35_ar3_n3at}

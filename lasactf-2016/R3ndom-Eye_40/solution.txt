@@ -1,0 +1,8 @@
+Looking at the hint, the problem involves file carving.
+
+We look for any embedded files, and we find that there is a PNG
+embedded within the eyeofthetiger file. Copying the bytes for the
+embedded PNG into a new file using a hex editor, we see that the flag
+is the PNG itself.
+
+lasactf{rip_my_curly_braces}
