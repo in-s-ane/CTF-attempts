@@ -1,0 +1,3 @@
+The flag can be found in the source of the page as a comment
+
+pseudopods_are_da_bomb
