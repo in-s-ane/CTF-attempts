@@ -1,0 +1,4 @@
+$ strings recovered.img | grep flag
+flag{waw_ctrl_f_was_sooper_afective
+
+waw_ctrl_f_was_sooper_afective
