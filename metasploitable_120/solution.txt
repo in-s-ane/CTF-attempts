@@ -1,0 +1,10 @@
+Opening up the pcap file in wireshark, we find a bunch of tcp streams.
+
+Following tcp stream 2 (filter = tcp.stream eq 2), we find a suspicious base64 encoded string.
+Decoding it, we get some sort of php conditional, which compares the file contents to some sha1 hashed string.
+
+I've managed to extract the php code executed when the check passes, which can be found in extracted.php.
+
+$ php extracted.php
+
+new_wordpress_old_plugin
