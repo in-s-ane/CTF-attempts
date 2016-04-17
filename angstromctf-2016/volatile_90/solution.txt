@@ -1,0 +1,15 @@
+The problem asks us to find a suspicious process, so let's use volatility to list all the processes in the dump.
+
+$ volatility -f memdump.mem pslist
+
+Looking at the processes, we can see a process with an id of 1768 called wtf_who_names_k, which
+looks like a flag.
+
+Let's dump the contents of the executable running the process:
+$ volatility -f memdump.mem memdump -p 1768 --dump-dir .
+
+Running `strings 1768.exe | head` will give us the flag.
+
+C:\Documents and Settings\Administrator\Desktop\wtf_who_names_keyloggers_like_this.exe
+
+wtf_who_names_keyloggers_like_this

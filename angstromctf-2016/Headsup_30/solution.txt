@@ -1,0 +1,12 @@
+Looking at the pdf reveals a bunch of bytes that resemble those of a png file.
+However, the first few bytes read PDF, and some other header bytes are missing.
+
+Replace
+25 50 44 46
+
+with
+89 50 4e 47 0d 0a
+
+Save the repaired file as a png and open it up to get the flag.
+
+heads_shoulders_knees_and_toes

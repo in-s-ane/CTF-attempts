@@ -1,0 +1,6 @@
+Opening the document in word, we find that some letters are in a Calibri and some are in Calibri Light.
+The hint tells us that the flag is encoded using Baconian. (https://en.wikipedia.org/wiki/Bacon%27s_cipher)
+Taking the letters in Calibri Light as B, and the letters in Calibri as A, we can decode the Baconian:
+THEFLAGISASTREETCARNAMEDDESIRE
+
+The flag is astreetcarnameddesire

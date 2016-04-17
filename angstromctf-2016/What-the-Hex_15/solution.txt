@@ -1,0 +1,8 @@
+>> python
+Python 2.7.10 (default, Oct 14 2015, 16:09:02)
+[GCC 5.2.1 20151010] on linux2
+Type "help", "copyright", "credits" or "license" for more information.
+>>> "6236343a20615735305a584a755a58526659323975646d567963326c76626c3930623239736331397962324e72".decode("hex")
+'b64: aW50ZXJuZXRfY29udmVyc2lvbl90b29sc19yb2Nr'
+>>> "aW50ZXJuZXRfY29udmVyc2lvbl90b29sc19yb2Nr".decode("base64")
+'internet_conversion_tools_rock'

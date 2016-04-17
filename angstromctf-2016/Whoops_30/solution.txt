@@ -1,0 +1,9 @@
+We are given a disk image, with the mention of deleted files.
+Using testdisk, we can recover the contents of the image, and look around.
+
+The hint mentions something about where deleted files go, so let's look inside the .Trashes
+folder.
+
+In oops/.Trashes/Files/books, we find flatland.txt with the flag at the end:
+
+flag{waw_.Trashes_isnt_useless_after_all}

